@@ -14,16 +14,16 @@ mysql = MySQL(app)
 
 @app.route('/enquiry',methods=['POST'])
 def enquiry():
-    # if request.is_json:
-    #     content = request.get_json()
-    #     username = content['username']
-    #     email = content['email']
-    #     phoneno = content['phoneno']
+    if request.is_json:
+        content = request.get_json()
+        username = content['username']
+        email = content['email']
+        phoneno = content['phoneno']
 
-    #     cur = mysql.connection.cursor()
-    #     cur.execute("INSERT INTO enquiry(username, email, phoneno) VALUES(%s, %s, %s)",(username, email, phoneno))
-    #     mysql.connection.commit()
-    #     cur.close()
+        cur = mysql.connection.cursor()
+        cur.execute("INSERT INTO enquiry(username, email, phoneno) VALUES(%s, %s, %s)",(username, email, phoneno))
+        mysql.connection.commit()
+        cur.close()
 
     return "Enquiry Submitted"
 
