@@ -1,1 +1,1 @@
-web: gunicorn app:payment
+web: gunicorn payment:app
