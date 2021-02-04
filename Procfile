@@ -1,1 +1,1 @@
-web: python herokutrial:app
+web: gunicorn herokutrial:app
