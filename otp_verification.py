@@ -30,7 +30,7 @@ def verify():
         country_code = session.get("country_code")
 
         verification = api.phones.verification_check(phone_number,country_code,token)
-
+        print(str(verification))
         if verification.ok():
             return Response("<h1>Success!</h1>")
     return render_template("verify.html")

@@ -1,1 +1,1 @@
-web: gunicorn payment:app
+web: python strategic_partner_form:app
