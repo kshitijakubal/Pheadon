@@ -3,6 +3,10 @@ from authy.api import AuthyApiClient
 
 app = Flask(__name__)
 
+# +16786162693
+# SID - AC3f89b59e38e908bc00e652cf69f209d1
+# Auth Token - 911b3583f3c487d0473b79af7ab811df
+
 app.config.from_object('config')
 app.secret_key = 'jsiauHyueajkajhs'
 api = AuthyApiClient(app.config['AUTHY_API_KEY'])
