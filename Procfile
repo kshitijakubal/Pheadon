@@ -1,1 +1,1 @@
-web: python strategic_partner_form:app
+web: python herokutrial:app
