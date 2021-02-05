@@ -1,5 +1,5 @@
-from flask import Flask, request
-from flask_mysqldb import MySQL
+from flask import Flask, request, jsonify
+
 from firebase_admin import credentials, firestore, initialize_app
 
 app = Flask(__name__)
@@ -78,9 +78,21 @@ def spform():
         kyc=kyc,nominee_name=nominee_name,nominee_relation=nominee_relation,Autohub_Advisor=Autohub_Advisor)
         db.collection('strategicpartners').add(sp.to_dict())
 
+        # db.collection('strategicpartners').get()
+        # .then(snapshot => console.log(snapshot.size))
+
 
         return 'Data Saved'
 
+@app.route('/getdata',methods=['GET'])
+def get_data():
+    docs = db.collection('strategicpartners').stream()
+    my_dict = { el.id: el.to_dict() for el in docs }
+    return my_dict
+    
 
 if __name__ == '__main__':
     app.run()
+
+
+

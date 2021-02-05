@@ -1,0 +1,78 @@
+{
+	"id": "7589eb24-be50-4ec5-7e73-c191b411bc25",
+	"name": "StrategicPartners",
+	"description": "",
+	"order": [
+		"7d11d992-d516-95aa-68d4-af75541b54c8",
+		"e767bc1d-97d6-1d64-b883-0ff44250ee95"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1612531744446,
+	"owner": "10681612",
+	"public": false,
+	"requests": [
+		{
+			"id": "7d11d992-d516-95aa-68d4-af75541b54c8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/spform",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "7589eb24-be50-4ec5-7e73-c191b411bc25",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://127.0.0.1:5000/spform",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1612531993255,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n    \"name\":\"Deep\",\r\n    \"perm_add\":\"Thane\",\r\n    \"present_add\":\"Andheri\",\r\n    \"date\":\"05/02/21\",\r\n    \"DOB\":\"25/06/98\",\r\n    \"bld_grp\":\"B+ve\",\r\n    \"mob_no\":\"9876543215\",\r\n    \"email\":\"deep@gmail.com\",\r\n    \"ref\":\"sonam\",\r\n    \"comp_name\":\"VArt\",\r\n    \"comp_add\":\"Andheri\",\r\n    \"designation\":\"Sr.Web Developer\",\r\n    \"kyc\":\"Aadhar\",\r\n    \"nominee_name\":\"sagar\",\r\n    \"nominee_relation\":\"brother\",\r\n    \"Autohub_Advisor\":\"No\"\r\n}"
+		},
+		{
+			"id": "e767bc1d-97d6-1d64-b883-0ff44250ee95",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/getdata",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "7589eb24-be50-4ec5-7e73-c191b411bc25",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://127.0.0.1:5000/getdata",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1612532073010,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n    \"name\":\"Deep\",\r\n    \"perm_add\":\"Thane\",\r\n    \"present_add\":\"Andheri\",\r\n    \"date\":\"05/02/21\",\r\n    \"DOB\":\"25/06/98\",\r\n    \"bld_grp\":\"B+ve\",\r\n    \"mob_no\":\"9876543215\",\r\n    \"email\":\"deep@gmail.com\",\r\n    \"ref\":\"sonam\",\r\n    \"comp_name\":\"VArt\",\r\n    \"comp_add\":\"Andheri\",\r\n    \"designation\":\"Sr.Web Developer\",\r\n    \"kyc\":\"Aadhar\",\r\n    \"nominee_name\":\"sagar\",\r\n    \"nominee_relation\":\"brother\",\r\n    \"Autohub_Advisor\":\"No\"\r\n}"
+		}
+	]
+}
